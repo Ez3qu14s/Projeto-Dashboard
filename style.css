@@ -3,12 +3,46 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+body {
+    background-color: #f6f6f8;
+}
+li {
+    list-style: none;
+}
+img {
+    width: 100%;
+}
 .container {
     height: 100vh;
     display: flex;
 }
+aside {
+    height: 100%;
+    width: 20%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
 
+}
+aside img {
+    margin-bottom: 20px;
+}
+aside li {
+    padding: 12px 24px;
+    
+
+}
+aside button {
+    background: transparent;
+    border: none;
+    text-align: start;
+    padding: 0 24px;
+}
+aside  i {
+    margin-right: 12px;
+}
 h2{
     margin-bottom: 2px;
 }
