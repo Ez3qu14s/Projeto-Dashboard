@@ -18,7 +18,7 @@ img {
 }
 aside {
     height: 100%;
-    width: 20%;
+    width: 300px;
     padding: 24px;
     display: flex;
     flex-direction: column;
@@ -31,8 +31,10 @@ aside img {
 }
 aside li {
     padding: 12px 24px;
-    
+}
 
+aside li p {
+    display: inline;
 }
 aside button {
     background: transparent;
@@ -40,11 +42,80 @@ aside button {
     text-align: start;
     padding: 0 24px;
 }
+
+aside button p {
+    display: inline;
+}
 aside  i {
     margin-right: 12px;
 }
 h2{
     margin-bottom: 2px;
+}
+
+
+main {
+    width: 100%;
+    padding: 20px;
+}
+
+main .content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+.container main header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 20px 0;
+}
+
+.container main header div {
+    display: flex;
+    justify-content: center;
+}
+
+.container main header div .change-theme {
+    margin-right: 12px;
+}
+
+.container main header .presentation {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    margin-right: 8px;
+    text-align: end;
+}
+
+.container main header img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+
+.graphics{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: rgb(131, 19, 146);
+    width: 32%;
+    height: 10%;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px red;
+    color: white;
+    padding: 20px;
+}
+
+input[type="date"] {
+    margin: 40px;
 }
 table{
     background: rgba(238, 243, 255, 0.555);
@@ -85,4 +156,189 @@ a{
     display: block;
     margin: 1px auto;
     color:blue
+}
+
+.profile-photo img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.recent-updates {
+    margin-top: 10px;
+    margin-bottom: 28px;
+}
+.recent-updates h2 {
+    margin-bottom: 6px;
+}
+.recent-updates .update{
+    background: purple ;
+    padding: 5px;
+    border-radius:4px ;
+    box-shadow: 10px 5px 5px ;
+    transition: all 250ms ease;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 12px;
+}
+.recent-updates .update:hover {
+    box-shadow: none;
+}
+.recent-updates .update .update{
+    display: grid;
+    grid-template-columns: 10 px auto;
+    gap: 5px;
+    margin-bottom: 3px;
+}
+.right .sales-analytics{
+    margin-top: 10px;
+}
+.right .sales-analytics .item{
+    background:beige;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    margin-bottom:8px;
+    padding: 6px;
+    border-radius:4px;
+    box-shadow: none ; 
+}
+.right .sales-analytics .item:hover{
+    box-shadow: none;
+}
+.right .sales-analytics .item .right{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin: 0%;
+    width: 100%;
+}
+.right .sales-analytics .item .icon{
+    padding: 4px;
+    color:gold;
+    border-radius: 50%;
+    background: blue;
+    display: flex;
+}
+.right .sales-analytics .item.offline .icon{
+    background: red ;
+}
+.right .sales-analytics .item.customers .icon{
+    background: green;
+}
+.right .sales-analytics .add-product{
+    background-color: transparent;
+    border: 2px;
+    color:blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right .sales-analytics .add-product div{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.info h3 {
+    font-size: 14px;
+}
+
+.caixa {
+    border: 1px solid red;
+    box-shadow: 10px  5px 2px blue;
+    border-radius: 20px ;
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.caixa:hover{
+    box-shadow: none;
+}
+
+div.icon {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+button.button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    background: #831392;
+    color: #fff;
+    border-radius: 6px;
+    border: none;
+}
+
+.change-theme button {
+    /* background: #fff;*/
+    background: transparent;
+    padding: 2px 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.change-theme button.sun {
+    background: #831392;
+    color: #fff;
+}
+
+@media (max-width: 1100px) {
+    main .content .graphs {
+        grid-column: 1 / -1;
+    }
+
+    main .content .news {
+        grid-column: 1 / -1;
+    }
+
+    main .content .news section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    aside {
+        width: 100px;
+        /* align-items: center; */
+    }
+    aside img {
+        width: 50px;
+    }
+
+    aside li {
+        padding: 12px 0;
+        text-align: center;
+    }
+    aside li p {
+        display: none;
+    }
+
+    aside button {
+        padding: 0;
+    }
+
+    aside button p {
+        display: none;
+    }
+    main .content {
+        grid-template-columns: 1fr;
+    }
+
+    main .content .news section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+    aside {
+        width: 100%;
+        height: 80px;
+    }
 }

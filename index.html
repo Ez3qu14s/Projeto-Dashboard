@@ -12,32 +12,92 @@
 
 <body>
     <div class="container">
-        <aside> 
-            <div class = "nav">
+        <aside>
+            <div class="nav">
                 <img src="/img/CTAbillity.svg" alt="">
-            <ul>
-                <li><i class="bi bi-columns-gap"></i> Dashboard</li>
-                <li> <i class="bi bi-person"></i>Custumers</li>
-                <li><i class="bi bi-file-earmark"></i> Orders</li>
-                <li><i class="bi bi-graph-up"></i> Analytics</li>
-                <li><i class="bi bi-envelope-at"></i> Menssages</li>
-                <li><i class="bi bi-clipboard-check"></i>Products</li>
-                <li><i class="bi bi-exclamation-circle"></i> Reports</li>
-                <li><i class="bi bi-gear"></i> Settings</li>
-                <li><i class="bi bi-plus"></i> Add product</li>
+                <ul>
+                    <li><i class="bi bi-columns-gap"></i>
+                        <p>Dashboard</p>
+                    </li>
+                    <li> <i class="bi bi-person"></i>
+                        <p>Custumers</p>
+                    </li>
+                    <li><i class="bi bi-file-earmark"></i>
+                        <p>Orders</p>
+                    </li>
+                    <li><i class="bi bi-graph-up"></i>
+                        <p>Orders</p>
+                    </li>
+                    <li><i class="bi bi-envelope-at"></i>
+                        <p>Menssages</p>
+                    </li>
+                    <li><i class="bi bi-clipboard-check"></i>
+                        <p>Products</p>
+                    </li>
+                    <li><i class="bi bi-exclamation-circle"></i>
+                        <p>Reports</p>
+                    </li>
+                    <li><i class="bi bi-gear"></i>
+                        <p>Settings</p>
+                    </li>
+                    <li><i class="bi bi-plus"></i>
+                        <p>Add product</p>
+                    </li>
 
-            </ul>
-        </div>
-         <button><i class="bi bi-box-arrow-in-right"></i> Log out </button>
+                </ul>
+            </div>
+            <button><i class="bi bi-box-arrow-in-right"></i>
+                <p>Log out</p>
+            </button>
         </aside>
 
         <main>
-            <header></header>
+            <header>
+                <h1>Dashboard</h1>
+
+                <div>
+                    <div class="change-theme">
+                        <button class="sun"><i class="bi bi-brightness-high"></i></button>
+                        <button class="moon"><i class="bi bi-moon"></i></button>
+                    </div>
+
+                    <div class="profile">
+                        <div class="presentation">
+                            <p>Hey, Gabriel</p>
+                            <span>Admin</span>
+                        </div>
+
+                        <img class="profile-picture" src="./img/pfp.jpg" alt="">
+                    </div>
+                </div>
+            </header>
 
             <div class="content">
                 <div class="graphs">
-                    <section class="graphics"></section>
-                  <h2> ordens recentes</h2>
+                    <section class="graphics">
+                        <div class="card">
+                            <i></i>
+                            <h3>Vendas Totais</h3>
+                            <h2>R$99,000</h2>
+                            <h6>Ultimas 24 Horas</h6>
+                            <h4>81%</h4>
+                        </div>
+                        <div class="card">
+                            <i></i>
+                            <h3>Despesas Totais</h3>
+                            <h2>R$65,000</h2>
+                            <h6>Ultimas 24 Horas</h6>
+                            <h4>62%</h4>
+                        </div>
+                        <div class="card">
+                            <i></i>
+                            <h3>Renda Total</h3>
+                            <h2>R$34,000</h2>
+                            <h6>Ultimas 24 Horas</h6>
+                            <h4>23%</h4>
+                        </div>
+                    </section>
+                    <h2> ordens recentes</h2>
                     <table>
                         <thead>
                             <tr>
@@ -92,14 +152,100 @@
                         </tbody>
                     </table>
                     <a href="#">Mostrar Todos</a>
-            </div>
                 </div>
                 <div class="news">
-                    <section></section>
-                    <section></section>
+                    <section>
+                        <div class="recent-updates">
+                            <h2>Recent Updates</h2>
+                            <div class="updates">
+                                <div class="update">
+                                    <div class="profile-photo">
+                                        <img src="https://wallpapers-clan.com/wp-content/uploads/2023/05/cool-pfp-02.jpg">
+                                    </div>
+                                    <div class="message">
+                                        <p><b>Michael Jackson</b> received his order of Night Springs.</p>
+                                        <small class="text-muted">1 minute ago</small>
+                                    </div>
+                                </div>
+                                <div class="update">
+                                    <div class="profile-photo">
+                                        <img src="https://wallpapers-clan.com/wp-content/uploads/2023/05/cool-pfp-02.jpg">
+                                    </div>
+                                    <div class="message">
+                                        <p><b>Twenty One Pilots</b> received his order of Night Springs.</p>
+                                        <small class="text-muted">1 minute ago</small>
+                                    </div>
+                                </div>
+                                <div class="update">
+                                    <div class="profile-photo">
+                                        <img src="https://wallpapers-clan.com/wp-content/uploads/2023/05/cool-pfp-02.jpg">
+                                    </div>
+                                    <div class="message">
+                                        <p><b>Alan Wake</b> received his order of Night Springs.</p>
+                                        <small class="text-muted">1 minute ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sales-analystics">
+                            <h2>Sales Analystics</h2>
+                            <div class="item Online">
+                                <div class="right caixa">
+                                    <div class="icon">
+                                        <i class="bi bi-cart"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h3>ONLINE ORDERS</h3>
+                                        <small class="text-muted">Last 24 Hours</small>
+                                    </div>
+                                    <h5 class="success">+20%</h5>
+                                    <h3>2508</h3>
+                                </div>
+                            </div>
+
+                            <div class="item offline">
+
+
+                                <div class="right caixa">
+                                    <div class="icon">
+                                        <i class="bi bi-bag"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h3>OFFLINE ORDERS</h3>
+                                        <small class="text-muted">Last 24 Hours</small>
+                                    </div>
+                                    <h5 class="danger">-10%</h5>
+                                    <h3>1240</h3>
+                                </div>
+                            </div>
+
+                            <div class="item customers">
+
+                                <div class="right caixa">
+                                    <div class="icon">
+                                        <i class="bi bi-person-fill"></i>
+                                    </div>
+                                    <div class="info">
+                                        <h3>NEW CUSTOMERS</h3>
+                                        <small class="text-muted">Last 24 Hours</small>
+                                    </div>
+                                    <h5 class="success">+30%</h5>
+                                    <h3>1179</h3>
+                                </div>
+                            </div>
+                            <div class="item add-product">
+                                <span class="material-icons-sharp"><button class="button"> Add Product</button></span>
+                            </div>
+
+
+
+                        </div>
+                    </section>
                 </div>
             </div>
-        </main>
+
+    </div>
+    </main>
     </div>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </body>
