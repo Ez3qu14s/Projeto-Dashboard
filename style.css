@@ -5,12 +5,17 @@
 }
 body {
     background-color: #f6f6f8;
+    font-family: 'Montserrat', sans-serif;
 }
 li {
     list-style: none;
 }
 img {
     width: 100%;
+}
+
+button {
+    cursor: pointer;
 }
 .container {
     height: 100vh;
@@ -31,6 +36,12 @@ aside img {
 }
 aside li {
     padding: 12px 24px;
+    cursor: pointer;
+}
+
+aside li:hover {
+    background-color: #e1e3f0;
+    border-left: 4px solid #7a83df;
 }
 
 aside li p {
@@ -46,7 +57,7 @@ aside button {
 aside button p {
     display: inline;
 }
-aside  i {
+aside i {
     margin-right: 12px;
 }
 h2{
@@ -81,6 +92,10 @@ main .content {
     margin-right: 12px;
 }
 
+header .icon-ham {
+    display: none;
+}
+
 .container main header .presentation {
     display: flex;
     text-align: start;
@@ -101,7 +116,15 @@ main .content {
     flex-direction: row;
     justify-content: space-between; 
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
+}
+
+.graphs input {
+    padding: 8px 16px;
+    margin-bottom: 16px;
+    background: #fff;
+    border: none;
+    border-radius: 4px;
 }
 
 .card {
@@ -125,6 +148,8 @@ table{
     text-align: center;
     box-shadow: 2px 2px 2px black;
     transition: all 300ms ease;
+
+    overflow-x: scroll;
 }
 table:hover{
     box-shadow: none;
@@ -138,6 +163,10 @@ table tbody td{
 
 table tbody tr:last-child td{
     border :none;
+}
+
+table td {
+    padding: 4px;
 }
  #aviso{
     color:blue;
@@ -338,7 +367,26 @@ button.button {
 
 @media (max-width: 560px) {
     aside {
+        display: none;
+    }
+
+    .container main header div {
+        display: none;
+        
+    }
+
+    .container main header .icon-ham {
+        font-size: 36px;
+
+    }
+
+    .graphics {
+        display: block;
         width: 100%;
-        height: 80px;
+    }
+
+    .graphics .card {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
